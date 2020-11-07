@@ -1,1 +1,122 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live 4 Stories no Aeroclube de Sorocaba - Pedidos de combos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Live 4 Stories Aeroclube - Pedidos</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nome">Nome</label>  
+  <div class="col-md-4">
+  <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Combo">Combo</label>
+  <div class="col-md-4">
+    <select id="Combo" name="Combo" class="form-control">
+      <option value="Hunter">Hunter Burger</option>
+      <option value="Texas">Texas Burger</option>
+      <option value="Chicken">Chicken Burger</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="numvoucher">Número Voucher</label>  
+  <div class="col-md-4">
+  <input id="numvoucher" name="numvoucher" type="text" placeholder="Voucher" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">E-mail</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="endereco">Endereço</label>  
+  <div class="col-md-4">
+  <input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bairro">Bairro</label>  
+  <div class="col-md-4">
+  <input id="bairro" name="bairro" type="text" placeholder="Bairro" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="telefone">Telefone</label>  
+  <div class="col-md-4">
+  <input id="telefone" name="telefone" type="text" placeholder="Telefone" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="isDelivery">Delivery</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="isDelivery-0">
+      <input type="radio" name="isDelivery" id="isDelivery-0" value="Sim" checked="checked">
+      Sim
+    </label>
+	</div>
+  <div class="radio">
+    <label for="isDelivery-1">
+      <input type="radio" name="isDelivery" id="isDelivery-1" value="Nao">
+      Não
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="vendedor">Vendedor</label>
+  <div class="col-md-4">
+    <select id="vendedor" name="vendedor" class="form-control">
+      <option value="Barbara">Bárbara</option>
+      <option value="Kazu">Kazu</option>
+      <option value="Lucas">Lucas</option>
+      <option value="Rocky">Rocky</option>
+      <option value="Hunter">Hunter</option>
+    </select>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</body>
+</html>
