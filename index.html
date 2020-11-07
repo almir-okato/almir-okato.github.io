@@ -16,8 +16,8 @@
 <img src="img/aero-logo.jpg" class="rounded float-left" style="max-width:100px;">
 </div>
 
-<div>
-<form class="form-horizontal">
+<div class="container-fluid">
+<form class="form-horizontal" action=""  method="POST" name="formulario">
 <fieldset>
 
 <!-- Form Name -->
@@ -25,8 +25,8 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="nome">Nome</label>  
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="nome">Nome</label>  
+  <div class="col-md-6">
   <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md" required="">
     
   </div>
@@ -34,8 +34,8 @@
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Combo">Combo</label>
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="Combo">Combo</label>
+  <div class="col-md-6">
     <select id="Combo" name="Combo" class="form-control">
       <option value="Hunter">Hunter Burger</option>
       <option value="Texas">Texas Burger</option>
@@ -46,8 +46,8 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="numvoucher">Número Voucher</label>  
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="numvoucher">Número Voucher</label>  
+  <div class="col-md-6">
   <input id="numvoucher" name="numvoucher" type="text" placeholder="Voucher" class="form-control input-md" required="">
     
   </div>
@@ -55,8 +55,8 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email">E-mail</label>  
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="email">E-mail</label>  
+  <div class="col-md-6">
   <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md" required="">
     
   </div>
@@ -64,8 +64,8 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="endereco">Endereço</label>  
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="endereco">Endereço</label>  
+  <div class="col-md-6">
   <input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required="">
     
   </div>
@@ -73,8 +73,8 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="bairro">Bairro</label>  
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="bairro">Bairro</label>  
+  <div class="col-md-6">
   <input id="bairro" name="bairro" type="text" placeholder="Bairro" class="form-control input-md" required="">
     
   </div>
@@ -82,8 +82,8 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="telefone">Telefone</label>  
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="telefone">Telefone</label>  
+  <div class="col-md-6">
   <input id="telefone" name="telefone" type="text" placeholder="Telefone" class="form-control input-md" required="">
     
   </div>
@@ -91,8 +91,8 @@
 
 <!-- Multiple Radios -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="isDelivery">Delivery</label>
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="isDelivery">Delivery</label>
+  <div class="col-md-6">
   <div class="radio">
     <label for="isDelivery-0">
       <input type="radio" name="isDelivery" id="isDelivery-0" value="Sim" checked="checked">
@@ -110,8 +110,8 @@
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="vendedor">Vendedor</label>
-  <div class="col-md-4">
+  <label class="col-md-6 control-label" for="vendedor">Vendedor</label>
+  <div class="col-md-6">
     <select id="vendedor" name="vendedor" class="form-control">
       <option value="Barbara">Bárbara</option>
       <option value="Kazu">Kazu</option>
@@ -119,6 +119,14 @@
       <option value="Rocky">Rocky</option>
       <option value="Hunter">Hunter</option>
     </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-6 control-label" for="send">Confirmar</label>
+  <div class="col-md-6">
+    <button id="send" name="send" class="btn btn-primary">Confirmar</button>
   </div>
 </div>
 
