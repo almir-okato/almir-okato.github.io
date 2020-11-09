@@ -32,6 +32,10 @@ const live4storiesPedidos = {
   // reload entries on success
   $(document).on('submit', '#formulario', function(e) {
     e.preventDefault();
+	let delivery = "Nao"
+	if ($('#isDelivery-0').prop("checked")) {
+		delivery = "Sim"
+	}
 
     live4storiesPedidos.add(
       $('#nome').val().trim(),
@@ -41,7 +45,7 @@ const live4storiesPedidos = {
       $('#endereco').val().trim(),
       $('#bairro').val().trim(),
       $('#telefone').val().trim(),
-      $('#isDelivery-0').checked ? "Sim" : "Nao",
+      delivery,
       $('#vendedor').val().trim()
     ).done(function(result) {
 	  document.body.innerHTML = 'Pedido feito com sucesso!<br><a href="javascript:void(0)" onClick="location.reload(true);">Voltar</a>';
