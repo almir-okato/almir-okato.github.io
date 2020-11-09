@@ -44,15 +44,15 @@ const live4storiesPedidos = {
       $('#isDelivery-0').checked ? "Sim" : "Nao",
       $('#vendedor').val().trim()
     ).done(function(result) {
-      document.body.innerHTML = "SUCCESS";
-	  alert("Success");
+	  document.body.innerHTML = 'Pedido feito com sucesso!<br><a href="javascript:void(0)" onClick="location.reload(true);">Voltar</a>';
+	  alert("Pedido feito com sucesso!");
     }).error(function(error) {
       console.log(error);
     });
   });
   
   // $(document).ready(function() {
-    // alert("Success");
+	  
   // });
 
 })();

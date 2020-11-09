@@ -11,10 +11,10 @@
 </head>
 <body>
 
-<div class="container-fluid row" >
-<img src="img/4Stories-logo2.png" class="rounded float-left" style="max-width:100px;">
-<img src="img/HunterBurger-logo.jpg" class="rounded float-left" style="max-width:100px;">
-<img src="img/aero-logo.jpg" class="rounded float-left" style="max-width:100px;">
+<div class="container-fluid" >
+<img src="img/4Stories-logo2.png" class="rounded" style="max-width:100px;">
+<img src="img/HunterBurger-logo.jpg" class="rounded" style="max-width:100px;">
+<img src="img/aero-logo.jpg" class="rounded" style="max-width:100px;">
 </div>
 
 <div class="container-fluid">
@@ -58,7 +58,7 @@
 	<div class="form-group">
 	  <label class="col-md-6 control-label" for="email">E-mail</label>  
 	  <div class="col-md-6">
-	  <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md" required="">
+	  <input id="email" name="email" type="email" placeholder="E-mail" class="form-control input-md" required="">
 		
 	  </div>
 	</div>
@@ -83,9 +83,9 @@
 
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-6 control-label" for="telefone">Telefone</label>  
+	  <label class="col-md-6 control-label" for="telefone">Telefone (DDD X XXXX-XXXX)</label>  
 	  <div class="col-md-6">
-	  <input id="telefone" name="telefone" type="text" placeholder="Telefone" class="form-control input-md" required="">
+	  <input id="telefone" name="telefone" pattern="(\(?\d{2}\)?\s?)?(\d{4,5}(-|\s)?\d{4})" type="text" placeholder="Telefone" class="form-control input-md" required="">
 		
 	  </div>
 	</div>
