@@ -49,6 +49,7 @@ const live4storiesPedidos = {
       $('#vendedor').val().trim()
     ).done(function(result) {
 	  document.body.innerHTML = 'Pedido feito com sucesso!<br><a href="javascript:void(0)" onClick="location.reload(true);">Voltar</a>';
+	  window.scrollTo(0,0);
 	  alert("Pedido feito com sucesso!");
     }).error(function(error) {
       console.log(error);
