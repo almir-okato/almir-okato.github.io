@@ -16,7 +16,11 @@ const live4storiesPedidos = {
       type: 'GET',
       url: `${apiUrl}/checkvoucher`,
 	  data: {numvoucher: numvoucher},
-      dataType: 'json'
+      dataType: 'json',
+	  error: function(xhr, status, error){
+		console.log(error);
+	    alert("ERRO checando duplicidade do numero do voucher! Por favor tente novamente - status " + error + " cod " + xhr.status);
+	  }
     });
   },
   // add a single guestbood entry
@@ -35,7 +39,7 @@ const live4storiesPedidos = {
         document.body.innerHTML = 'Algo deu errado, por favor tente novamente!<br><a href="javascript:void(0)" onClick="location.reload();">Voltar</a>';
 	    window.scrollTo(0,0);
 	    alert("ERRO! Por favor tente novamente - status " + error + " cod " + xhr.status);
-	  },
+	  }
     });
   }
 };
@@ -53,8 +57,10 @@ const live4storiesPedidos = {
 
 	let count = 0;
 	
+	let voucher = parseInt($('#numvoucher').val().trim());
+	
 	live4storiesPedidos.checkvoucher(
-		$('#numvoucher').val().trim()
+		voucher.toString()
 	).done(function(result) {
 		$.each(result.docs, function(idx, pedido) {
 			count++;
@@ -69,7 +75,7 @@ const live4storiesPedidos = {
 		  $('#nome').val().trim(),
 		  $('#Combo').val().trim(),
 		  $('#Refri').val().trim(),
-		  $('#numvoucher').val().trim(),
+		  voucher.toString(),
 		  $('#email').val().trim(),
 		  $('#endereco').val().trim(),
 		  $('#bairro').val().trim(),
