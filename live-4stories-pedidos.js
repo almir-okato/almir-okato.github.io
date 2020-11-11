@@ -18,6 +18,8 @@ const live4storiesPedidos = {
 	  data: {numvoucher: numvoucher},
       dataType: 'json',
 	  error: function(xhr, status, error){
+		// $("#loader").hide();
+		$("body").removeClass("loading");
 		console.log(error);
 	    alert("ERRO checando duplicidade do numero do voucher! Por favor tente novamente - status " + error + " cod " + xhr.status);
 	  }
@@ -36,6 +38,8 @@ const live4storiesPedidos = {
       dataType: 'json',
 	  error: function(xhr, status, error){
 		console.log(error);
+		// $("#loader").hide();
+		$("body").removeClass("loading");
         document.body.innerHTML = 'Algo deu errado, por favor tente novamente!<br><a href="javascript:void(0)" onClick="location.reload();">Voltar</a>';
 	    window.scrollTo(0,0);
 	    alert("ERRO! Por favor tente novamente - status " + error + " cod " + xhr.status);
@@ -55,6 +59,9 @@ const live4storiesPedidos = {
 		delivery = "Sim"
 	}
 
+	// $("#loader").show();
+	$("body").addClass("loading"); 
+	
 	let count = 0;
 	
 	let voucher = parseInt($('#numvoucher').val().trim());
@@ -67,6 +74,8 @@ const live4storiesPedidos = {
 		});
 		console.log(count);
 		if (count > 0) {
+			// $("#loader").hide();
+			$("body").removeClass("loading");
 			alert("Este voucher já está cadastrado! Verifique se o número está correto!");
 			return; //cant add an order
 		}
@@ -83,6 +92,8 @@ const live4storiesPedidos = {
 		  delivery,
 		  $('#vendedor').val().trim()
 		).done(function(result) {
+		  // $("#loader").hide();
+		  $("body").removeClass("loading");
 		  document.body.innerHTML = 'Pedido feito com sucesso!<br><a href="javascript:void(0)" onClick="location.reload(true);">Voltar</a>';
 		  window.scrollTo(0,0);
 		  alert("Pedido feito com sucesso!");
